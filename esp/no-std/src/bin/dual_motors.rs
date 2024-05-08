@@ -58,14 +58,14 @@ fn main() -> ! {
 
     // configure motor 1
     let mut motor1 = Motor::new(
-        io.pins.gpio4.into_push_pull_output(),
-        io.pins.gpio5.into_push_pull_output(),
+        io.pins.gpio6.into_push_pull_output(),
+        io.pins.gpio7.into_push_pull_output(),
     );
 
     // configure motor 2
     let mut motor2 = Motor::new(
-        io.pins.gpio6.into_push_pull_output(),
-        io.pins.gpio7.into_push_pull_output(),
+        io.pins.gpio4.into_push_pull_output(),
+        io.pins.gpio5.into_push_pull_output(),
     );
 
     // configure buttons for motors
